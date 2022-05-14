@@ -9,4 +9,5 @@ Pod::Spec.new do |s|
   s.platform = :ios, '13.0'
   s.source_files = 'Spackle/**/*.swift'
   s.requires_arc = true
+  s.swift_version = '5.0'
 end
