@@ -106,8 +106,11 @@ extension CGRect {
     var topLeading: CGPoint {
         get { CGPoint.isRightToLeftLayoutDirection ? topRight : topLeft }
         set {
-            if CGPoint.isRightToLeftLayoutDirection { topRight = newValue }
-            else { topLeft = newValue }
+            if CGPoint.isRightToLeftLayoutDirection {
+                topRight = newValue
+            } else {
+                topLeft = newValue
+            }
         }
     }
 
@@ -116,8 +119,11 @@ extension CGRect {
     var topTrailing: CGPoint {
         get { CGPoint.isRightToLeftLayoutDirection ? topLeft : topRight }
         set {
-            if CGPoint.isRightToLeftLayoutDirection { topLeft = newValue }
-            else { topRight = newValue }
+            if CGPoint.isRightToLeftLayoutDirection {
+                topLeft = newValue
+            } else {
+                topRight = newValue
+            }
         }
     }
 
@@ -126,8 +132,11 @@ extension CGRect {
     var centerLeading: CGPoint {
         get { CGPoint.isRightToLeftLayoutDirection ? centerRight : centerLeft }
         set {
-            if CGPoint.isRightToLeftLayoutDirection { centerRight = newValue }
-            else { centerLeft = newValue }
+            if CGPoint.isRightToLeftLayoutDirection {
+                centerRight = newValue
+            } else {
+                centerLeft = newValue
+            }
         }
     }
 
@@ -136,8 +145,11 @@ extension CGRect {
     var centerTrailing: CGPoint {
         get { CGPoint.isRightToLeftLayoutDirection ? centerLeft : centerRight }
         set {
-            if CGPoint.isRightToLeftLayoutDirection { centerLeft = newValue }
-            else { centerRight = newValue }
+            if CGPoint.isRightToLeftLayoutDirection {
+                centerLeft = newValue
+            } else {
+                centerRight = newValue
+            }
         }
     }
 
@@ -146,8 +158,11 @@ extension CGRect {
     var bottomLeading: CGPoint {
         get { CGPoint.isRightToLeftLayoutDirection ? bottomRight : bottomLeft }
         set {
-            if CGPoint.isRightToLeftLayoutDirection { bottomRight = newValue }
-            else { bottomLeft = newValue }
+            if CGPoint.isRightToLeftLayoutDirection {
+                bottomRight = newValue
+            } else {
+                bottomLeft = newValue
+            }
         }
     }
 
@@ -156,8 +171,11 @@ extension CGRect {
     var bottomTrailing: CGPoint {
         get { CGPoint.isRightToLeftLayoutDirection ? bottomLeft : bottomRight }
         set {
-            if CGPoint.isRightToLeftLayoutDirection { bottomLeft = newValue }
-            else { bottomRight = newValue }
+            if CGPoint.isRightToLeftLayoutDirection {
+                bottomLeft = newValue
+            } else {
+                bottomRight = newValue
+            }
         }
     }
 }

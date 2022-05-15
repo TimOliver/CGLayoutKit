@@ -22,6 +22,8 @@
 
 import UIKit
 
+// swiftlint:disable identifier_name
+
 /// A collection of convenience properties and methods
 /// to help simplify and streamline configuring, sizing and laying out views
 

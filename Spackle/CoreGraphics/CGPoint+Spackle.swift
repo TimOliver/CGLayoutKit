@@ -23,6 +23,8 @@
 import CoreGraphics
 import UIKit
 
+// swiftlint:disable identifier_name
+
 // MARK: - Translations -
 
 public extension CGPoint {

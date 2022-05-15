@@ -49,6 +49,7 @@ class ViewController: UITableViewController {
         updateRedViewPosition()
     }
 
+    // swiftlint:disable cyclomatic_complexity
     private func updateRedViewPosition(animated: Bool = false) {
 
         let position = (selectedHorizontal, selectedVertical)
