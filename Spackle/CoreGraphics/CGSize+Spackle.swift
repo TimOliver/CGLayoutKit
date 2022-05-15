@@ -34,12 +34,8 @@ extension CGSize {
     ///              or capped at the current size
     /// - Returns: The final size, scaled down to fit the requested size.
     public func fittingSize(_ size: CGSize, upscale: Bool = true) -> CGSize {
-        // Get the relative scale of each dimension
-        let widthScale = size.width / self.width
-        let heightScale = size.height / self.height
-
         // In order to fit the size, we need the smaller scale
-        let scale = min(widthScale, heightScale)
+        let scale = min(size.width / self.width, size.height / self.height)
 
         // If the scale was larger than 1 (ie upscaling),
         // and we explicitly don't want that, just return the original size
@@ -58,12 +54,8 @@ extension CGSize {
     ///              or capped at the current size
     /// - Returns: The final size, scaled down to fill the requested size.
     public func fillingSize(_ size: CGSize, upscale: Bool = true) -> CGSize {
-        // Get the relative scale of each dimension
-        let widthScale = size.width / self.width
-        let heightScale = size.height / self.height
-
         // In order to fill the size, we need the larger scale
-        let scale = max(widthScale, heightScale)
+        let scale = max(size.width / self.width, size.height / self.height)
 
         // If the scale was larger than 1 (ie upscaling),
         // and we explicitly don't want that, just return the original size
