@@ -40,7 +40,7 @@ This is super performant and is simple enough to write, but it isn't very easy t
 With Spackle, the equivalent code becomes this.
 
 ```swift
-redView.rightCenter = containerView.bounds.rightCenter.offsetBy(x: -10)
+redView.rightCenter = containerView.bounds.rightCenter.offsetBy(dx: -10)
 ```
 
 By defining and using relative anchors, we can achieve a similar flexibility to Auto Layout, but in a much simpler way.
