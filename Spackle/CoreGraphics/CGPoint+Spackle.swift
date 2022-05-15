@@ -21,10 +21,13 @@
 //  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 import CoreGraphics
+import UIKit
 
-extension CGPoint {
+// MARK: - Translations -
 
-    /// Offsets the position of this rectangle by separate X and Y values
+public extension CGPoint {
+
+    /// Returns an offset of this point by separate X and Y values
     /// - Parameters:
     ///   - x: The number of points to offset the X value
     ///   - y: The number of points to offset the Y value
@@ -32,10 +35,41 @@ extension CGPoint {
         return CGPoint(x: self.x + x, y: self.y + y)
     }
 
-    /// Offsets the position of this rectangle by the same horizontal and vertical distance
+    /// Returns an offset of this point with the same length for both X and Y
     /// - Parameters:
     ///   - length: The length in points for both X and Y to offset this point
     func offsetBy(_ length: CGFloat) -> CGPoint {
         return CGPoint(x: self.x + length, y: self.y + length)
+    }
+
+    /// Returns an offset of this point by separate X and Y values, while also
+    /// semantically adjusting for right-to-left UI environments
+    /// - Parameters:
+    ///   - x: The number of points to offset the X value
+    ///   - y: The number of points to offset the Y value
+    func leadingOffsetBy(x: CGFloat = 0.0, y: CGFloat = 0.0) -> CGPoint {
+        var output = CGPoint.zero
+        output.y = self.y + y
+        output.x = self.x + (CGPoint.isRightToLeftLayoutDirection ? -x : x)
+        return output
+    }
+
+    /// Returns an offset of this point with the same length for both X and Y values,
+    /// while also semantically adjusting for right-to-left UI environments
+    /// - Parameters:
+    ///   - length: The length in points for both X and Y to offset this point
+    func leadingOffsetBy(_ length: CGFloat) -> CGPoint {
+        var output = CGPoint.zero
+        output.y = self.y + length
+        output.x = self.x + (CGPoint.isRightToLeftLayoutDirection ? -length : length)
+        return output
+    }
+}
+
+// MARK: - Private State -
+
+internal extension CGPoint {
+    static var isRightToLeftLayoutDirection: Bool {
+        UIApplication.shared.userInterfaceLayoutDirection == .rightToLeft
     }
 }

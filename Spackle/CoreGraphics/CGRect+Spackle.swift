@@ -21,7 +21,6 @@
 //  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 import CoreGraphics
-import UIKit
 
 // MARK: - Corner & Edge Positions -
 
@@ -105,9 +104,9 @@ extension CGRect {
     /// The position of the top leading corner of this rectangle
     /// (Top left by default, top right in RTL languages)
     var topLeading: CGPoint {
-        get { Static.isRTL ? topRight : topLeft }
+        get { CGPoint.isRightToLeftLayoutDirection ? topRight : topLeft }
         set {
-            if Static.isRTL { topRight = newValue }
+            if CGPoint.isRightToLeftLayoutDirection { topRight = newValue }
             else { topLeft = newValue }
         }
     }
@@ -115,9 +114,9 @@ extension CGRect {
     /// The position of the top leading corner of this rectangle
     /// (Top right by default, top left in RTL languages)
     var topTrailing: CGPoint {
-        get { Static.isRTL ? topLeft : topRight }
+        get { CGPoint.isRightToLeftLayoutDirection ? topLeft : topRight }
         set {
-            if Static.isRTL { topLeft = newValue }
+            if CGPoint.isRightToLeftLayoutDirection { topLeft = newValue }
             else { topRight = newValue }
         }
     }
@@ -125,9 +124,9 @@ extension CGRect {
     /// The position of the middle of the leading edge of this rectangle
     /// (Center left by default, center right in RTL languages)
     var centerLeading: CGPoint {
-        get { Static.isRTL ? centerRight : centerLeft }
+        get { CGPoint.isRightToLeftLayoutDirection ? centerRight : centerLeft }
         set {
-            if Static.isRTL { centerRight = newValue }
+            if CGPoint.isRightToLeftLayoutDirection { centerRight = newValue }
             else { centerLeft = newValue }
         }
     }
@@ -135,9 +134,9 @@ extension CGRect {
     /// The position of the top leading corner of this rectangle
     /// (Center right by default, center left in RTL languages)
     var centerTrailing: CGPoint {
-        get { Static.isRTL ? centerLeft : centerRight }
+        get { CGPoint.isRightToLeftLayoutDirection ? centerLeft : centerRight }
         set {
-            if Static.isRTL { centerLeft = newValue }
+            if CGPoint.isRightToLeftLayoutDirection { centerLeft = newValue }
             else { centerRight = newValue }
         }
     }
@@ -145,9 +144,9 @@ extension CGRect {
     /// The position of the bottom leading corner of this rectangle
     /// (Bottom left by default, bottom right in RTL languages)
     var bottomLeading: CGPoint {
-        get { Static.isRTL ? bottomRight : bottomLeft }
+        get { CGPoint.isRightToLeftLayoutDirection ? bottomRight : bottomLeft }
         set {
-            if Static.isRTL { bottomRight = newValue }
+            if CGPoint.isRightToLeftLayoutDirection { bottomRight = newValue }
             else { bottomLeft = newValue }
         }
     }
@@ -155,21 +154,10 @@ extension CGRect {
     /// The position of the top leading corner of this rectangle
     /// (Top left by default, top right in RTL languages)
     var bottomTrailing: CGPoint {
-        get { Static.isRTL ? bottomLeft : bottomRight }
+        get { CGPoint.isRightToLeftLayoutDirection ? bottomLeft : bottomRight }
         set {
-            if Static.isRTL { bottomLeft = newValue }
+            if CGPoint.isRightToLeftLayoutDirection { bottomLeft = newValue }
             else { bottomRight = newValue }
         }
-    }
-}
-
-/// Static layout information that persists
-/// for the duration of the application lifecycle
-private extension CGRect {
-    struct Static {
-        /// The app is currently using a language that is right-to-left layout
-        static var isRTL: Bool = {
-            return UIApplication.shared.userInterfaceLayoutDirection == .rightToLeft
-        }()
     }
 }
