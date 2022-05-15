@@ -22,6 +22,61 @@
 
 import CoreGraphics
 
+// MARK: - Aspect Sizing -
+
+extension CGSize {
+
+    /// Returns a size of the same aspect ratio, but scaled up or down
+    /// to completely fit inside the requested size.
+    /// - Parameters:
+    ///   - size: The size to fit the current size to
+    ///   - upscale: Whether the size can be larger than the current size,
+    ///              or capped at the current size
+    /// - Returns: The final size, scaled down to fit the requested size.
+    public func fittingSize(_ size: CGSize, upscale: Bool = true) -> CGSize {
+        // Get the relative scale of each dimension
+        let widthScale = size.width / self.width
+        let heightScale = size.height / self.height
+
+        // In order to fit the size, we need the smaller scale
+        let scale = min(widthScale, heightScale)
+
+        // If the scale was larger than 1 (ie upscaling),
+        // and we explicitly don't want that, just return the original size
+        if !upscale && scale > 1.0 + .ulpOfOne { return self }
+
+        // Multiply this size by the scale
+        return CGSize(width: floor(self.width * scale),
+                      height: floor(self.height * scale))
+    }
+
+    /// Returns a size of the same aspect ratio, but scaled up or down
+    /// to fill the bounds of the requested size, with overflow.
+    /// - Parameters:
+    ///   - size: The size to fill the current size to
+    ///   - upscale: Whether the size can be larger than the current size,
+    ///              or capped at the current size
+    /// - Returns: The final size, scaled down to fill the requested size.
+    public func fillingSize(_ size: CGSize, upscale: Bool = true) -> CGSize {
+        // Get the relative scale of each dimension
+        let widthScale = size.width / self.width
+        let heightScale = size.height / self.height
+
+        // In order to fill the size, we need the larger scale
+        let scale = max(widthScale, heightScale)
+
+        // If the scale was larger than 1 (ie upscaling),
+        // and we explicitly don't want that, just return the original size
+        if !upscale && scale > 1.0 + .ulpOfOne { return self }
+
+        // Multiply this size by the scale
+        return CGSize(width: floor(self.width * scale),
+                      height: floor(self.height * scale))
+    }
+}
+
+// MARK: - Convenience Initializers -
+
 extension CGSize {
 
     /// Creates a new size struct with equal width and height
