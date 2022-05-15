@@ -33,15 +33,15 @@ public extension CGPoint {
     /// - Parameters:
     ///   - x: The number of points to offset the X value
     ///   - y: The number of points to offset the Y value
-    func offsetBy(x: CGFloat = 0.0, y: CGFloat = 0.0) -> CGPoint {
-        return CGPoint(x: self.x + x, y: self.y + y)
+    func offsetBy(dx: CGFloat = 0.0, dy: CGFloat = 0.0) -> CGPoint {
+        return CGPoint(x: x + dx, y: y + dy)
     }
 
     /// Returns an offset of this point with the same length for both X and Y
     /// - Parameters:
     ///   - length: The length in points for both X and Y to offset this point
     func offsetBy(_ length: CGFloat) -> CGPoint {
-        return CGPoint(x: self.x + length, y: self.y + length)
+        return CGPoint(x: x + length, y: y + length)
     }
 
     /// Returns an offset of this point by separate X and Y values, while also
@@ -49,10 +49,10 @@ public extension CGPoint {
     /// - Parameters:
     ///   - x: The number of points to offset the X value
     ///   - y: The number of points to offset the Y value
-    func leadingOffsetBy(x: CGFloat = 0.0, y: CGFloat = 0.0) -> CGPoint {
+    func leadingOffsetBy(dx: CGFloat = 0.0, dy: CGFloat = 0.0) -> CGPoint {
         var output = CGPoint.zero
-        output.y = self.y + y
-        output.x = self.x + (CGPoint.isRightToLeftLayoutDirection ? -x : x)
+        output.y = self.y + dy
+        output.x = self.x + (CGPoint.isRightToLeftLayoutDirection ? -dx : dx)
         return output
     }
 

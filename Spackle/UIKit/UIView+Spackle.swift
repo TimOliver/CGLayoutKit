@@ -148,29 +148,29 @@ extension UIView {
     /// The position of this view from its top, leading position
     /// (Top-left by default, top-right in RTL layouts)
     var centerLeading: CGPoint {
-        get { frame.topLeading }
-        set { frame.topLeading = newValue }
+        get { frame.centerLeading }
+        set { frame.centerLeading = newValue }
     }
 
     /// The position of this view from its top, trailing position
     /// (Top-right by default, top-left in RTL layouts)
     var centerTrailing: CGPoint {
-        get { frame.topTrailing }
-        set { frame.topTrailing = newValue }
+        get { frame.centerTrailing }
+        set { frame.centerTrailing = newValue }
     }
 
     /// The position of this view from its top, leading position
     /// (Top-left by default, top-right in RTL layouts)
     var bottomLeading: CGPoint {
-        get { frame.topLeading }
-        set { frame.topLeading = newValue }
+        get { frame.bottomLeading }
+        set { frame.bottomLeading = newValue }
     }
 
     /// The position of this view from its top, trailing position
     /// (Top-right by default, top-left in RTL layouts)
     var bottomTrailing: CGPoint {
-        get { frame.topTrailing }
-        set { frame.topTrailing = newValue }
+        get { frame.bottomTrailing }
+        set { frame.bottomTrailing = newValue }
     }
 }
 
@@ -182,14 +182,27 @@ extension UIView {
     /// - Parameters:
     ///   - x: The offset value of the X position
     ///   - y: The offset value of the Y position
-    func offsetBy(x: CGFloat = 0.0, y: CGFloat = 0.0) {
-        frame.origin.x += x
-        frame.origin.y += y
+    func offsetBy(dx: CGFloat = 0.0, dy: CGFloat = 0.0) {
+        frame = frame.offsetBy(dx: dx, dy: dy)
+    }
+
+    /// Offset the position of the view from its leading position
+    /// (eg, the left side by default, the right side on RtL layouts)
+    func leadingOffsetBy(dx: CGFloat = 0.0, dy: CGFloat = 0.0) {
+        frame.origin = origin.leadingOffsetBy(dx: dx, dy: dy)
+    }
+
+    /// Scales the view independently in both directions
+    /// - Parameter dw: The fraction to scale the width
+    /// - Parameter dh: The fraction to scale the height
+    func scaleBy(dw: CGFloat = 1.0, dh: CGFloat = 1.0) {
+        frame.size.width *= dw
+        frame.size.height *= dh
     }
 
     /// Scales the view consistently in both directions
     /// - Parameter scale: The scale fraction to apply (1.0 is default)
-    func scale(by scale: CGFloat = 1.0) {
+    func scaleBy(_ scale: CGFloat = 1.0) {
         frame.size.width *= scale
         frame.size.height *= scale
     }

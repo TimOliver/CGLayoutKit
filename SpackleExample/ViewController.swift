@@ -61,13 +61,13 @@ class ViewController: UITableViewController {
 
             switch position {
             case (0, 0): redView.topLeft = containerView.bounds.topLeft.offsetBy(10)
-            case (1, 0): redView.topCenter = containerView.bounds.topCenter.offsetBy(y: 10)
-            case (2, 0): redView.topRight = containerView.bounds.topRight.offsetBy(x: -10, y: 10)
-            case (0, 1): redView.centerLeft = containerView.bounds.centerLeft.offsetBy(x: 10)
+            case (1, 0): redView.topCenter = containerView.bounds.topCenter.offsetBy(dy: 10)
+            case (2, 0): redView.topRight = containerView.bounds.topRight.offsetBy(dx: -10, dy: 10)
+            case (0, 1): redView.centerLeft = containerView.bounds.centerLeft.offsetBy(dx: 10)
             case (1, 1): redView.center = containerView.bounds.center
-            case (2, 1): redView.centerRight = containerView.bounds.centerRight.offsetBy(x: -10)
-            case (0, 2): redView.bottomLeft = containerView.bounds.bottomLeft.offsetBy(x: 10, y: -10)
-            case (1, 2): redView.bottomCenter = containerView.bounds.bottomCenter.offsetBy(y: -10)
+            case (2, 1): redView.centerRight = containerView.bounds.centerRight.offsetBy(dx: -10)
+            case (0, 2): redView.bottomLeft = containerView.bounds.bottomLeft.offsetBy(dx: 10, dy: -10)
+            case (1, 2): redView.bottomCenter = containerView.bounds.bottomCenter.offsetBy(dy: -10)
             case (2, 2): redView.bottomRight = containerView.bounds.bottomRight.offsetBy(-10)
             default: break
             }

@@ -14,19 +14,19 @@ class CGPointTests: XCTestCase {
         let point = CGPoint(x: 50.0, y: 50.0)
 
         // Positive offsetting
-        XCTAssertEqual(point.offsetBy(x: 10, y: 10),
+        XCTAssertEqual(point.offsetBy(dx: 10, dy: 10),
                        CGPoint(x: 60, y: 60))
 
         // Negative offsetting
-        XCTAssertEqual(point.offsetBy(x: -10, y: -10),
+        XCTAssertEqual(point.offsetBy(dx: -10, dy: -10),
                        CGPoint(x: 40, y: 40))
 
         // Only X offset
-        XCTAssertEqual(point.offsetBy(x: 10),
+        XCTAssertEqual(point.offsetBy(dx: 10),
                        CGPoint(x: 60, y: 50))
 
         // Only Y offset
-        XCTAssertEqual(point.offsetBy(y: 10),
+        XCTAssertEqual(point.offsetBy(dy: 10),
                        CGPoint(x: 50, y: 60))
     }
 
@@ -52,22 +52,22 @@ class CGPointTests: XCTestCase {
         let point = CGPoint(x: 50.0, y: 50.0)
 
         // Positive offsetting
-        XCTAssertEqual(point.leadingOffsetBy(x: 10, y: 10),
+        XCTAssertEqual(point.leadingOffsetBy(dx: 10, dy: 10),
                        CGPoint(x: 60, y: 60))
 
         // Negative offsetting
-        XCTAssertEqual(point.leadingOffsetBy(x: -10, y: -10),
+        XCTAssertEqual(point.leadingOffsetBy(dx: -10, dy: -10),
                        CGPoint(x: 40, y: 40))
 
         // Force the environment to flip directions
         CGPoint._setIsRightToLeftLayoutDirection(true)
 
         // Positive offsetting
-        XCTAssertEqual(point.leadingOffsetBy(x: 10, y: 10),
+        XCTAssertEqual(point.leadingOffsetBy(dx: 10, dy: 10),
                        CGPoint(x: 40, y: 60))
 
         // Negative offsetting
-        XCTAssertEqual(point.leadingOffsetBy(x: -10, y: -10),
+        XCTAssertEqual(point.leadingOffsetBy(dx: -10, dy: -10),
                        CGPoint(x: 60, y: 40))
     }
 
