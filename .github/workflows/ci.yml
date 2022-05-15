@@ -11,8 +11,3 @@ jobs:
     - uses: actions/checkout@v1
     - name: Run Spackle's Tests
       run: xcodebuild -project SpackleExample.xcodeproj -scheme SpackleExample -destination 'platform=iOS Simulator,name=iPhone 11' test
-      
-    - name: Coveralls
-      uses: coverallsapp/github-action@master
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
