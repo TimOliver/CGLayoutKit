@@ -18,8 +18,8 @@ For this reason, sometimes manual frame layout is still the preferred method. Ho
 
 As a very simple use-case, consider how you would lay out this red view inside of its white container view. 
 
-<img src="Example.png" alt="Spackle Example" />
-
+<img src="Example.png" alt="Spackle Example" width = "500" />
+    
 It would probably look something like this.
 
 ```swift
