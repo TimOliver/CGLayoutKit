@@ -14,6 +14,13 @@ While Auto Layout is officially recommended as the best way to lay out UI compon
 
 For this reason, sometimes manual frame layout is still the preferred method. However most of the time, it involves a lot of repetitive, hard-to-read math expressions. The goal of Spackle is to help automate away a lot of the repetitive aspects of these expressions, making manual layout easier to type, and easier to read, without introducing the same performance overhead of Auto Layout.
 
+# Features
+
+* Adds semantically named accessors (eg. `topLeft`) to `CGRect` and `UIView`.
+* Adds convenient offsetting APIs to `CGPoint`.
+* Adds additional sizing mechanisms to `CGSize`.
+* Streamlines configuring rounded `UIView` layers.
+
 # Instructions
 
 As a very simple use-case, consider how you would lay out this red view inside of its white container view. 
