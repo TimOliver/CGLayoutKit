@@ -3,6 +3,7 @@
 <span align="center">
 
 [![CI](https://github.com/TimOliver/Spackle/workflows/CI/badge.svg)](https://github.com/TimOliver/Spackle/actions?query=workflow%3ACI)
+[![Coverage Status](https://coveralls.io/repos/github/TimOliver/Spackle/badge.svg?branch=main)](https://coveralls.io/github/TimOliver/Spackle?branch=main)
 [![Version](https://img.shields.io/cocoapods/v/Spackle.svg?style=flat)](http://cocoadocs.org/docsets/Spackle)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/TimOliver/Spackle/main/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/Spackle.svg?style=flat)](http://cocoadocs.org/docsets/Spackle)
