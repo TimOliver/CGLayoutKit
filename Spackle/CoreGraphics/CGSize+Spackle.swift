@@ -42,8 +42,8 @@ extension CGSize {
         if !upscale && scale > 1.0 + .ulpOfOne { return self }
 
         // Multiply this size by the scale
-        return CGSize(width: floor(self.width * scale),
-                      height: floor(self.height * scale))
+        return CGSize(width: ceil(self.width * scale),
+                      height: ceil(self.height * scale))
     }
 
     /// Returns a size of the same aspect ratio, but scaled up or down
@@ -62,8 +62,8 @@ extension CGSize {
         if !upscale && scale > 1.0 + .ulpOfOne { return self }
 
         // Multiply this size by the scale
-        return CGSize(width: floor(self.width * scale),
-                      height: floor(self.height * scale))
+        return CGSize(width: ceil(self.width * scale),
+                      height: ceil(self.height * scale))
     }
 }
 

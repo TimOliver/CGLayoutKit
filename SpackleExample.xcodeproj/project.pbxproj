@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		221846942830B92A00FA6857 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 221846932830B92A00FA6857 /* README.md */; };
+		221846A32830C8A900FA6857 /* CGPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221846A22830C8A900FA6857 /* CGPointTests.swift */; };
+		221846A52830CC8500FA6857 /* CGSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221846A42830CC8500FA6857 /* CGSizeTests.swift */; };
+		221846A72830CE2800FA6857 /* CGRectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221846A62830CE2800FA6857 /* CGRectTests.swift */; };
 		22F5E52B282F4FC100EEA8B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5E52A282F4FC100EEA8B5 /* AppDelegate.swift */; };
 		22F5E52D282F4FC100EEA8B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5E52C282F4FC100EEA8B5 /* SceneDelegate.swift */; };
 		22F5E52F282F4FC100EEA8B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5E52E282F4FC100EEA8B5 /* ViewController.swift */; };
@@ -21,8 +24,22 @@
 		22F5E54A282F7FB300EEA8B5 /* UIEdgeInsets+Spackle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5E549282F7FB300EEA8B5 /* UIEdgeInsets+Spackle.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2218469D2830C88E00FA6857 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22F5E51F282F4FC100EEA8B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22F5E526282F4FC100EEA8B5;
+			remoteInfo = SpackleExample;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		221846932830B92A00FA6857 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		221846992830C88E00FA6857 /* SpackleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpackleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		221846A22830C8A900FA6857 /* CGPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointTests.swift; sourceTree = "<group>"; };
+		221846A42830CC8500FA6857 /* CGSizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeTests.swift; sourceTree = "<group>"; };
+		221846A62830CE2800FA6857 /* CGRectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectTests.swift; sourceTree = "<group>"; };
 		22F5E527282F4FC100EEA8B5 /* SpackleExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpackleExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F5E52A282F4FC100EEA8B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22F5E52C282F4FC100EEA8B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +56,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		221846962830C88E00FA6857 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22F5E524282F4FC100EEA8B5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -49,11 +73,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2218469A2830C88E00FA6857 /* SpackleTests */ = {
+			isa = PBXGroup;
+			children = (
+				221846A22830C8A900FA6857 /* CGPointTests.swift */,
+				221846A42830CC8500FA6857 /* CGSizeTests.swift */,
+				221846A62830CE2800FA6857 /* CGRectTests.swift */,
+			);
+			path = SpackleTests;
+			sourceTree = "<group>";
+		};
 		22F5E51E282F4FC100EEA8B5 = {
 			isa = PBXGroup;
 			children = (
 				22F5E53E282F573500EEA8B5 /* Spackle */,
 				22F5E529282F4FC100EEA8B5 /* SpackleExample */,
+				2218469A2830C88E00FA6857 /* SpackleTests */,
 				221846932830B92A00FA6857 /* README.md */,
 				22F5E528282F4FC100EEA8B5 /* Products */,
 			);
@@ -63,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				22F5E527282F4FC100EEA8B5 /* SpackleExample.app */,
+				221846992830C88E00FA6857 /* SpackleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +148,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		221846982830C88E00FA6857 /* SpackleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2218469F2830C88E00FA6857 /* Build configuration list for PBXNativeTarget "SpackleTests" */;
+			buildPhases = (
+				221846952830C88E00FA6857 /* Sources */,
+				221846962830C88E00FA6857 /* Frameworks */,
+				221846972830C88E00FA6857 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2218469E2830C88E00FA6857 /* PBXTargetDependency */,
+			);
+			name = SpackleTests;
+			productName = SpackleTests;
+			productReference = 221846992830C88E00FA6857 /* SpackleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		22F5E526282F4FC100EEA8B5 /* SpackleExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22F5E53B282F4FC100EEA8B5 /* Build configuration list for PBXNativeTarget "SpackleExample" */;
@@ -139,6 +193,10 @@
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
+					221846982830C88E00FA6857 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 22F5E526282F4FC100EEA8B5;
+					};
 					22F5E526282F4FC100EEA8B5 = {
 						CreatedOnToolsVersion = 13.3;
 					};
@@ -158,11 +216,19 @@
 			projectRoot = "";
 			targets = (
 				22F5E526282F4FC100EEA8B5 /* SpackleExample */,
+				221846982830C88E00FA6857 /* SpackleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		221846972830C88E00FA6857 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22F5E525282F4FC100EEA8B5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -177,6 +243,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		221846952830C88E00FA6857 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221846A52830CC8500FA6857 /* CGSizeTests.swift in Sources */,
+				221846A72830CE2800FA6857 /* CGRectTests.swift in Sources */,
+				221846A32830C8A900FA6857 /* CGPointTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22F5E523282F4FC100EEA8B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,6 +269,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2218469E2830C88E00FA6857 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22F5E526282F4FC100EEA8B5 /* SpackleExample */;
+			targetProxy = 2218469D2830C88E00FA6857 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		22F5E530282F4FC100EEA8B5 /* Main.storyboard */ = {
@@ -214,6 +298,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		221846A02830C88E00FA6857 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.SpackleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpackleExample.app/SpackleExample";
+			};
+			name = Debug;
+		};
+		221846A12830C88E00FA6857 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.SpackleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpackleExample.app/SpackleExample";
+			};
+			name = Release;
+		};
 		22F5E539282F4FC100EEA8B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -389,6 +509,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2218469F2830C88E00FA6857 /* Build configuration list for PBXNativeTarget "SpackleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				221846A02830C88E00FA6857 /* Debug */,
+				221846A12830C88E00FA6857 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		22F5E522282F4FC100EEA8B5 /* Build configuration list for PBXProject "SpackleExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

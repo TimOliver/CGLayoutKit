@@ -95,7 +95,7 @@ public extension CGRect {
     }
 }
 
-// MARK: - Semantic Positions
+// MARK: - Semantic Positions -
 
 // A collection of extensions for accessing
 // semantic corners of a rectangle that will change in right-to-left environments
