@@ -8,7 +8,11 @@
     
 </span>
 
-Spackle is a small framework consisting of a collection of various properties and extensions for making manually laying out views in UIKit a bit more quick and streamlined. It allows quick alignment of views from various points in their frame values, and also has rudimentary support for right-to-left style interfaces.
+Spackle is a framework with the mission of filling the gaps in UIKit when working with configuring and laying out `UIView` components. The framework features a collections of extensions for popular UIKit and Core Graphics components in order to make working with them much more streamlined and efficient.
+
+While Auto Layout is officially recommended as the best way to lay out UI components in UIKit, it does have some downsides. When the rules and complexity of the layout become too high, performance can often take a hit. Likewise, when constraints break, debugging what went wrong can sometimes take a long time.
+
+For this reason, sometimes manual frame layout is still the preferred method. However most of the time, it involves a lot of repetitive, hard-to-read math expressions. The goal of Spackle is to help automate away a lot of the repetitive aspects of these expressions, making manual layout easier to type, and easier to read, without introducing the same performance overhead of Auto Layout.
 
 # Instructions
 
@@ -23,7 +27,7 @@ redView.frame.origin.x = containerView.frame.width - (redView.frame.width + 10)
 redView.frame.origin.y = containerView.frame.midY - redView.bounds.midY
 ```
 
-This is super performant and is very simple to write, but it isn't very easy to read after the fact.
+This is super performant and is simple enough to write, but it isn't very easy to read after the fact.
 
 With Spackle, the equivalent code becomes this.
 
