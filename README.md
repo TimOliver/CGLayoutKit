@@ -1,4 +1,4 @@
-<img src="Logo.png" alt="Spackle" />
+<img src="Logo.webp" alt="Spackle" />
 
 <span align="center">
 
