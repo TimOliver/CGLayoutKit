@@ -1,0 +1,13 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run Spackle's Tests
+      run: xcodebuild -project SpackleExample.xcodeproj -scheme SpackleExample -destination 'platform=iOS Simulator,name=iPhone 11' test
