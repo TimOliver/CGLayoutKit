@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'Spackle'
-  s.version  = '0.0.1'
+  s.version  = '0.0.2'
   s.license  =  { :type => 'MIT', :file => 'LICENSE' }
   s.summary  = 'A collection of convenience properties and extensions for laying out views in UIKit.'
   s.homepage = 'https://github.com/TimOliver/Spackle'
