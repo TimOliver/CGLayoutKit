@@ -32,7 +32,7 @@ It would probably look something like this.
 
 ```swift
 redView.frame.origin.x = containerView.frame.width - (redView.frame.width + 10)
-redView.frame.origin.y = containerView.frame.midY - redView.bounds.midY
+redView.frame.origin.y = (containerView.frame.height * 0.5) - (redView.frame.height * 0.5)
 ```
 
 This is super performant and is simple enough to write, but it isn't very easy to read after the fact.
