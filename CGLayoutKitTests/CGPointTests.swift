@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import SpackleExample
+@testable import CGLayoutKitExample
 
 class CGPointTests: XCTestCase {
 

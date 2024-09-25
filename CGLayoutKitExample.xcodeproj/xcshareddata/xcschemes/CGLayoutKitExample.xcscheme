@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1330"
+   LastUpgradeVersion = "1600"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "22F5E526282F4FC100EEA8B5"
-               BuildableName = "SpackleExample.app"
-               BlueprintName = "SpackleExample"
-               ReferencedContainer = "container:SpackleExample.xcodeproj">
+               BuildableName = "CGLayoutKitExample.app"
+               BlueprintName = "CGLayoutKitExample"
+               ReferencedContainer = "container:CGLayoutKitExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "221846982830C88E00FA6857"
-               BuildableName = "SpackleTests.xctest"
-               BlueprintName = "SpackleTests"
-               ReferencedContainer = "container:SpackleExample.xcodeproj">
+               BuildableName = "CGLayoutKitTests.xctest"
+               BlueprintName = "CGLayoutKitTests"
+               ReferencedContainer = "container:CGLayoutKitExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "22F5E526282F4FC100EEA8B5"
-            BuildableName = "SpackleExample.app"
-            BlueprintName = "SpackleExample"
-            ReferencedContainer = "container:SpackleExample.xcodeproj">
+            BuildableName = "CGLayoutKitExample.app"
+            BlueprintName = "CGLayoutKitExample"
+            ReferencedContainer = "container:CGLayoutKitExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "22F5E526282F4FC100EEA8B5"
-            BuildableName = "SpackleExample.app"
-            BlueprintName = "SpackleExample"
-            ReferencedContainer = "container:SpackleExample.xcodeproj">
+            BuildableName = "CGLayoutKitExample.app"
+            BlueprintName = "CGLayoutKitExample"
+            ReferencedContainer = "container:CGLayoutKitExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -18,11 +18,11 @@
 		22F5E532282F4FC100EEA8B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F5E530282F4FC100EEA8B5 /* Main.storyboard */; };
 		22F5E534282F4FC100EEA8B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F5E533282F4FC100EEA8B5 /* Assets.xcassets */; };
 		22F5E537282F4FC100EEA8B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F5E535282F4FC100EEA8B5 /* LaunchScreen.storyboard */; };
-		22F5E540282F5B1F00EEA8B5 /* CGRect+Spackle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5E53F282F5B1F00EEA8B5 /* CGRect+Spackle.swift */; };
-		22F5E542282F694A00EEA8B5 /* CGPoint+Spackle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5E541282F694A00EEA8B5 /* CGPoint+Spackle.swift */; };
-		22F5E544282F69F000EEA8B5 /* UIView+Spackle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5E543282F69F000EEA8B5 /* UIView+Spackle.swift */; };
-		22F5E546282F7CAB00EEA8B5 /* CGSize+Spackle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5E545282F7CAB00EEA8B5 /* CGSize+Spackle.swift */; };
-		22F5E54A282F7FB300EEA8B5 /* UIEdgeInsets+Spackle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5E549282F7FB300EEA8B5 /* UIEdgeInsets+Spackle.swift */; };
+		22F5E540282F5B1F00EEA8B5 /* CGRect+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5E53F282F5B1F00EEA8B5 /* CGRect+Layout.swift */; };
+		22F5E542282F694A00EEA8B5 /* CGPoint+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5E541282F694A00EEA8B5 /* CGPoint+Layout.swift */; };
+		22F5E544282F69F000EEA8B5 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5E543282F69F000EEA8B5 /* UIView+Layout.swift */; };
+		22F5E546282F7CAB00EEA8B5 /* CGSize+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5E545282F7CAB00EEA8B5 /* CGSize+Layout.swift */; };
+		22F5E54A282F7FB300EEA8B5 /* UIEdgeInsets+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5E549282F7FB300EEA8B5 /* UIEdgeInsets+Layout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +37,13 @@
 
 /* Begin PBXFileReference section */
 		221846932830B92A00FA6857 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		221846992830C88E00FA6857 /* SpackleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpackleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		221846992830C88E00FA6857 /* CGLayoutKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CGLayoutKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		221846A22830C8A900FA6857 /* CGPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointTests.swift; sourceTree = "<group>"; };
 		221846A42830CC8500FA6857 /* CGSizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeTests.swift; sourceTree = "<group>"; };
 		221846A62830CE2800FA6857 /* CGRectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectTests.swift; sourceTree = "<group>"; };
 		221846A92830E44400FA6857 /* UIViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewTests.swift; sourceTree = "<group>"; };
-		22F5E527282F4FC100EEA8B5 /* SpackleExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpackleExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D5CBC52CA45557007320EE /* CGLayoutKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CGLayoutKit.podspec; sourceTree = "<group>"; };
+		22F5E527282F4FC100EEA8B5 /* CGLayoutKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGLayoutKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F5E52A282F4FC100EEA8B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22F5E52C282F4FC100EEA8B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		22F5E52E282F4FC100EEA8B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,11 +51,11 @@
 		22F5E533282F4FC100EEA8B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22F5E536282F4FC100EEA8B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22F5E538282F4FC100EEA8B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22F5E53F282F5B1F00EEA8B5 /* CGRect+Spackle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Spackle.swift"; sourceTree = "<group>"; };
-		22F5E541282F694A00EEA8B5 /* CGPoint+Spackle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Spackle.swift"; sourceTree = "<group>"; };
-		22F5E543282F69F000EEA8B5 /* UIView+Spackle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Spackle.swift"; sourceTree = "<group>"; };
-		22F5E545282F7CAB00EEA8B5 /* CGSize+Spackle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Spackle.swift"; sourceTree = "<group>"; };
-		22F5E549282F7FB300EEA8B5 /* UIEdgeInsets+Spackle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Spackle.swift"; sourceTree = "<group>"; };
+		22F5E53F282F5B1F00EEA8B5 /* CGRect+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Layout.swift"; sourceTree = "<group>"; };
+		22F5E541282F694A00EEA8B5 /* CGPoint+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Layout.swift"; sourceTree = "<group>"; };
+		22F5E543282F69F000EEA8B5 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		22F5E545282F7CAB00EEA8B5 /* CGSize+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Layout.swift"; sourceTree = "<group>"; };
+		22F5E549282F7FB300EEA8B5 /* UIEdgeInsets+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Layout.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +76,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2218469A2830C88E00FA6857 /* SpackleTests */ = {
+		2218469A2830C88E00FA6857 /* CGLayoutKitTests */ = {
 			isa = PBXGroup;
 			children = (
 				221846A22830C8A900FA6857 /* CGPointTests.swift */,
@@ -83,16 +84,17 @@
 				221846A62830CE2800FA6857 /* CGRectTests.swift */,
 				221846A92830E44400FA6857 /* UIViewTests.swift */,
 			);
-			path = SpackleTests;
+			path = CGLayoutKitTests;
 			sourceTree = "<group>";
 		};
 		22F5E51E282F4FC100EEA8B5 = {
 			isa = PBXGroup;
 			children = (
-				22F5E53E282F573500EEA8B5 /* Spackle */,
-				22F5E529282F4FC100EEA8B5 /* SpackleExample */,
-				2218469A2830C88E00FA6857 /* SpackleTests */,
+				22F5E53E282F573500EEA8B5 /* CGLayoutKit */,
+				22F5E529282F4FC100EEA8B5 /* CGLayoutKitExample */,
+				2218469A2830C88E00FA6857 /* CGLayoutKitTests */,
 				221846932830B92A00FA6857 /* README.md */,
+				22D5CBC52CA45557007320EE /* CGLayoutKit.podspec */,
 				22F5E528282F4FC100EEA8B5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,13 +102,13 @@
 		22F5E528282F4FC100EEA8B5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				22F5E527282F4FC100EEA8B5 /* SpackleExample.app */,
-				221846992830C88E00FA6857 /* SpackleTests.xctest */,
+				22F5E527282F4FC100EEA8B5 /* CGLayoutKitExample.app */,
+				221846992830C88E00FA6857 /* CGLayoutKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		22F5E529282F4FC100EEA8B5 /* SpackleExample */ = {
+		22F5E529282F4FC100EEA8B5 /* CGLayoutKitExample */ = {
 			isa = PBXGroup;
 			children = (
 				22F5E52A282F4FC100EEA8B5 /* AppDelegate.swift */,
@@ -117,24 +119,24 @@
 				22F5E535282F4FC100EEA8B5 /* LaunchScreen.storyboard */,
 				22F5E538282F4FC100EEA8B5 /* Info.plist */,
 			);
-			path = SpackleExample;
+			path = CGLayoutKitExample;
 			sourceTree = "<group>";
 		};
-		22F5E53E282F573500EEA8B5 /* Spackle */ = {
+		22F5E53E282F573500EEA8B5 /* CGLayoutKit */ = {
 			isa = PBXGroup;
 			children = (
 				22F5E547282F7ED800EEA8B5 /* CoreGraphics */,
 				22F5E548282F7EE200EEA8B5 /* UIKit */,
 			);
-			path = Spackle;
+			path = CGLayoutKit;
 			sourceTree = "<group>";
 		};
 		22F5E547282F7ED800EEA8B5 /* CoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
-				22F5E541282F694A00EEA8B5 /* CGPoint+Spackle.swift */,
-				22F5E53F282F5B1F00EEA8B5 /* CGRect+Spackle.swift */,
-				22F5E545282F7CAB00EEA8B5 /* CGSize+Spackle.swift */,
+				22F5E541282F694A00EEA8B5 /* CGPoint+Layout.swift */,
+				22F5E53F282F5B1F00EEA8B5 /* CGRect+Layout.swift */,
+				22F5E545282F7CAB00EEA8B5 /* CGSize+Layout.swift */,
 			);
 			path = CoreGraphics;
 			sourceTree = "<group>";
@@ -142,8 +144,8 @@
 		22F5E548282F7EE200EEA8B5 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				22F5E543282F69F000EEA8B5 /* UIView+Spackle.swift */,
-				22F5E549282F7FB300EEA8B5 /* UIEdgeInsets+Spackle.swift */,
+				22F5E543282F69F000EEA8B5 /* UIView+Layout.swift */,
+				22F5E549282F7FB300EEA8B5 /* UIEdgeInsets+Layout.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -151,9 +153,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		221846982830C88E00FA6857 /* SpackleTests */ = {
+		221846982830C88E00FA6857 /* CGLayoutKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2218469F2830C88E00FA6857 /* Build configuration list for PBXNativeTarget "SpackleTests" */;
+			buildConfigurationList = 2218469F2830C88E00FA6857 /* Build configuration list for PBXNativeTarget "CGLayoutKitTests" */;
 			buildPhases = (
 				221846952830C88E00FA6857 /* Sources */,
 				221846962830C88E00FA6857 /* Frameworks */,
@@ -164,14 +166,14 @@
 			dependencies = (
 				2218469E2830C88E00FA6857 /* PBXTargetDependency */,
 			);
-			name = SpackleTests;
+			name = CGLayoutKitTests;
 			productName = SpackleTests;
-			productReference = 221846992830C88E00FA6857 /* SpackleTests.xctest */;
+			productReference = 221846992830C88E00FA6857 /* CGLayoutKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		22F5E526282F4FC100EEA8B5 /* SpackleExample */ = {
+		22F5E526282F4FC100EEA8B5 /* CGLayoutKitExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 22F5E53B282F4FC100EEA8B5 /* Build configuration list for PBXNativeTarget "SpackleExample" */;
+			buildConfigurationList = 22F5E53B282F4FC100EEA8B5 /* Build configuration list for PBXNativeTarget "CGLayoutKitExample" */;
 			buildPhases = (
 				221846A82830E02D00FA6857 /* Run SwiftLint */,
 				22F5E523282F4FC100EEA8B5 /* Sources */,
@@ -182,9 +184,9 @@
 			);
 			dependencies = (
 			);
-			name = SpackleExample;
+			name = CGLayoutKitExample;
 			productName = CGFramingExample;
-			productReference = 22F5E527282F4FC100EEA8B5 /* SpackleExample.app */;
+			productReference = 22F5E527282F4FC100EEA8B5 /* CGLayoutKitExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -195,7 +197,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					221846982830C88E00FA6857 = {
 						CreatedOnToolsVersion = 13.3;
@@ -206,7 +208,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 22F5E522282F4FC100EEA8B5 /* Build configuration list for PBXProject "SpackleExample" */;
+			buildConfigurationList = 22F5E522282F4FC100EEA8B5 /* Build configuration list for PBXProject "CGLayoutKitExample" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,8 +221,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				22F5E526282F4FC100EEA8B5 /* SpackleExample */,
-				221846982830C88E00FA6857 /* SpackleTests */,
+				22F5E526282F4FC100EEA8B5 /* CGLayoutKitExample */,
+				221846982830C88E00FA6857 /* CGLayoutKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +251,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		221846A82830E02D00FA6857 /* Run SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -283,13 +286,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22F5E546282F7CAB00EEA8B5 /* CGSize+Spackle.swift in Sources */,
+				22F5E546282F7CAB00EEA8B5 /* CGSize+Layout.swift in Sources */,
 				22F5E52F282F4FC100EEA8B5 /* ViewController.swift in Sources */,
-				22F5E544282F69F000EEA8B5 /* UIView+Spackle.swift in Sources */,
-				22F5E54A282F7FB300EEA8B5 /* UIEdgeInsets+Spackle.swift in Sources */,
-				22F5E542282F694A00EEA8B5 /* CGPoint+Spackle.swift in Sources */,
+				22F5E544282F69F000EEA8B5 /* UIView+Layout.swift in Sources */,
+				22F5E54A282F7FB300EEA8B5 /* UIEdgeInsets+Layout.swift in Sources */,
+				22F5E542282F694A00EEA8B5 /* CGPoint+Layout.swift in Sources */,
 				22F5E52B282F4FC100EEA8B5 /* AppDelegate.swift in Sources */,
-				22F5E540282F5B1F00EEA8B5 /* CGRect+Spackle.swift in Sources */,
+				22F5E540282F5B1F00EEA8B5 /* CGRect+Layout.swift in Sources */,
 				22F5E52D282F4FC100EEA8B5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,7 +302,7 @@
 /* Begin PBXTargetDependency section */
 		2218469E2830C88E00FA6857 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 22F5E526282F4FC100EEA8B5 /* SpackleExample */;
+			target = 22F5E526282F4FC100EEA8B5 /* CGLayoutKitExample */;
 			targetProxy = 2218469D2830C88E00FA6857 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -338,7 +341,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpackleExample.app/SpackleExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CGLayoutKitExample.app/CGLayoutKitExample";
 			};
 			name = Debug;
 		};
@@ -356,7 +359,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpackleExample.app/SpackleExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CGLayoutKitExample.app/CGLayoutKitExample";
 			};
 			name = Release;
 		};
@@ -396,6 +399,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -456,6 +460,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -482,8 +487,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpackleExample/Info.plist;
+				INFOPLIST_FILE = CGLayoutKitExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -495,7 +501,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.Spackle;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.CGLayoutKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -511,8 +517,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpackleExample/Info.plist;
+				INFOPLIST_FILE = CGLayoutKitExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -524,7 +531,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.Spackle;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.CGLayoutKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -535,7 +542,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2218469F2830C88E00FA6857 /* Build configuration list for PBXNativeTarget "SpackleTests" */ = {
+		2218469F2830C88E00FA6857 /* Build configuration list for PBXNativeTarget "CGLayoutKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				221846A02830C88E00FA6857 /* Debug */,
@@ -544,7 +551,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		22F5E522282F4FC100EEA8B5 /* Build configuration list for PBXProject "SpackleExample" */ = {
+		22F5E522282F4FC100EEA8B5 /* Build configuration list for PBXProject "CGLayoutKitExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				22F5E539282F4FC100EEA8B5 /* Debug */,
@@ -553,7 +560,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		22F5E53B282F4FC100EEA8B5 /* Build configuration list for PBXNativeTarget "SpackleExample" */ = {
+		22F5E53B282F4FC100EEA8B5 /* Build configuration list for PBXNativeTarget "CGLayoutKitExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				22F5E53C282F4FC100EEA8B5 /* Debug */,
