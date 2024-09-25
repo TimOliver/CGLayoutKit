@@ -1,32 +1,32 @@
-<img src="Logo.webp" alt="Spackle" />
+<img src="Logo.webp" alt="CGLayoutKit" />
 
 <span align="center">
 
-[![CI](https://github.com/TimOliver/Spackle/workflows/CI/badge.svg)](https://github.com/TimOliver/Spackle/actions?query=workflow%3ACI)
-[![Version](https://img.shields.io/cocoapods/v/Spackle.svg?style=flat)](http://cocoadocs.org/docsets/Spackle)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/TimOliver/Spackle/main/LICENSE)
-[![Platform](https://img.shields.io/cocoapods/p/Spackle.svg?style=flat)](http://cocoadocs.org/docsets/Spackle)
+[![CI](https://github.com/TimOliver/CGLayoutKit/workflows/CI/badge.svg)](https://github.com/TimOliver/CGLayoutKit/actions?query=workflow%3ACI)
+![Version](https://img.shields.io/cocoapods/v/CGLayoutKit.svg?style=flat)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/TimOliver/CGLayoutKit/main/LICENSE)
+![Platform](https://img.shields.io/cocoapods/p/CGLayoutKit.svg?style=flat)
     
 </span>
 
-Spackle is a framework with the mission of filling the gaps in UIKit when working with configuring and laying out `UIView` components. The framework features a collections of extensions for popular UIKit and Core Graphics components in order to make working with them much more streamlined and efficient.
+CGLayoutKit is a framework with the mission of filling the gaps in Core Graphics layout logic when working with configuring and laying out `UIView` components. The framework features a collections of extensions for popular UIKit and Core Graphics components in order to make working with them much more streamlined and efficient.
 
 While Auto Layout is officially recommended as the best way to lay out UI components in UIKit, it does have some downsides. When the rules and complexity of the layout become too high, performance can often take a hit. Likewise, when constraints break, debugging what went wrong can sometimes take a long time.
 
-For this reason, sometimes manual frame layout is still the preferred method. However most of the time, it involves a lot of repetitive, hard-to-read math expressions. The goal of Spackle is to help automate away a lot of the repetitive aspects of these expressions, making manual layout easier to type, and easier to read, without introducing the same performance overhead of Auto Layout.
+For this reason, sometimes manual frame layout is still the preferred method. However most of the time, it involves a lot of repetitive, hard-to-read math expressions. The goal of CGLayoutKit is to help automate away a lot of the repetitive aspects of these expressions, making manual layout easier to type, and easier to read, without introducing the same performance overhead of Auto Layout.
 
 # Features
 
 * Adds semantically named accessors (eg. `topLeft`) to `CGRect` and `UIView`.
 * Adds convenient offsetting APIs to `CGPoint`.
 * Adds additional sizing mechanisms to `CGSize`.
-* Streamlines configuring rounded `UIView` layers.
+* Streamlines configuring rounded `UIView` layers and laying out elements in it appropriately.
 
 # Instructions
 
 As a very simple use-case, consider how you would lay out this red view inside of its white container view. 
 
-<img src="Example.png" alt="Spackle Example" width = "500" />
+<img src="Example.png" alt="CGLayoutKit Example" width = "500" />
     
 It would probably look something like this.
 
@@ -37,7 +37,7 @@ redView.frame.origin.y = (containerView.frame.height - redView.frame.height) * 0
 
 This is super performant and is simple enough to write, but it isn't very easy to read after the fact.
 
-With Spackle, the equivalent code becomes this.
+With CGLayoutKit, the equivalent code becomes this.
 
 ```swift
 redView.rightCenter = containerView.bounds.rightCenter.offsetBy(dx: -10)
@@ -51,16 +51,16 @@ By defining and using relative anchors, we can achieve a similar flexibility to 
 
 # Installation
 
-Spackle is a very simple framework and can be easily imported manually or with CocoaPods.
+CGLayoutKit is a very simple framework and can be easily imported manually or with CocoaPods.
 
 ## Manual Installation
 
-Drag the `Spackle` folder into your Xcode project.
+Drag the `CGLayoutKit` folder into your Xcode project.
 
 ### CocoaPods
 
 ```
-pod 'Spackle'
+pod 'CGLayoutKit'
 ```
 
 ### SPM
@@ -69,8 +69,8 @@ I'll add this eventually. But if you want it now, please file a PR!
 
 # Credits
 
-Spackle was built as a component of iComics 2 by [Tim Oliver](https://twitter.com/TimOliverAU)
+CGLayoutKit was built as a component of iComics 2 by [Tim Oliver](https://threads.net/@timoliver)
 
 # License
 
-Spackle is available under the MIT License. Please check the [LICENSE](LICENSE) file for more information.
+CGLayoutKit is available under the MIT License. Please check the [LICENSE](LICENSE) file for more information.

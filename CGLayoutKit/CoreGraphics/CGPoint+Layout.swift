@@ -1,5 +1,5 @@
 //
-//  CGPoint+Spackle.swift
+//  CGPoint+Layout.swift
 //
 //  Copyright 2022-2024 Timothy Oliver. All rights reserved.
 //
