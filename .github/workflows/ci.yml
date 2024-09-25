@@ -9,5 +9,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Run Spackle's Tests
-      run: xcodebuild -project SpackleExample.xcodeproj -scheme SpackleExample -destination 'platform=iOS Simulator,name=iPhone 11' test
+    - name: Run CGLayoutKit's Tests
+      run: xcodebuild -project CGLayoutKitExample.xcodeproj -scheme CGLayoutKitExample -destination 'platform=iOS Simulator,name=iPhone 15' test
